@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BricksBalls" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/BricksBalls" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="SDL2/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="SDL2/x86_64-w64-mingw32-image/include/SDL2" />
+					<Add directory="SDL2/x86_64-w64-mingw32-mixer/include/SDL2" />
+					<Add directory="SDL2/x86_64-w64-mingw32-ttf/include/SDL2" />
+					<Add directory="./" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main" />
+					<Add option="-lSDL2" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_ttf" />
+					<Add option="-lSDL2_mixer" />
+					<Add directory="SDL2/x86_64-w64-mingw32/lib" />
+					<Add directory="SDL2/x86_64-w64-mingw32-image/lib" />
+					<Add directory="SDL2/x86_64-w64-mingw32-mixer/lib" />
+					<Add directory="SDL2/x86_64-w64-mingw32-ttf/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/BricksBalls" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="./" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="E:/code/SDL2/x86_64-w64-mingw32/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="E:/code/SDL2/x86_64-w64-mingw32/lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+		</ExtraCommands>
+		<Unit filename="include/clientGame.h" />
+		<Unit filename="include/custom.h" />
+		<Unit filename="include/event.h" />
+		<Unit filename="include/game.h" />
+		<Unit filename="include/level.h" />
+		<Unit filename="include/parameter.h" />
+		<Unit filename="include/play.h" />
+		<Unit filename="include/setting.h" />
+		<Unit filename="include/sound.h" />
+		<Unit filename="include/textureManager.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/clientGame.cpp" />
+		<Unit filename="src/custom.cpp" />
+		<Unit filename="src/event.cpp" />
+		<Unit filename="src/game.cpp" />
+		<Unit filename="src/level.cpp" />
+		<Unit filename="src/parameter.cpp" />
+		<Unit filename="src/play.cpp" />
+		<Unit filename="src/setting.cpp" />
+		<Unit filename="src/sound.cpp" />
+		<Unit filename="src/textureManager.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
