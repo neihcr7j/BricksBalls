@@ -10,7 +10,7 @@
 	"play.h"
 	"custom.h"
 
-1648797875 e:\code\sdl2\bricksballs\include\clientgame.h
+1650620968 e:\code\sdl2\bricksballs\include\clientgame.h
 	<parameter.h>
 
 1650023999 e:\code\sdl2\bricksballs\include\parameter.h
@@ -19,7 +19,7 @@
 	<SDL_image.h>
 	<SDL_ttf.h>
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -33,35 +33,30 @@
 	"SDL_filesystem.h"
 	"SDL_gamecontroller.h"
 	"SDL_haptic.h"
-	"SDL_hidapi.h"
 	"SDL_hints.h"
 	"SDL_joystick.h"
 	"SDL_loadso.h"
 	"SDL_log.h"
 	"SDL_messagebox.h"
-	"SDL_metal.h"
 	"SDL_mutex.h"
 	"SDL_power.h"
 	"SDL_render.h"
 	"SDL_rwops.h"
-	"SDL_sensor.h"
 	"SDL_shape.h"
 	"SDL_system.h"
 	"SDL_thread.h"
 	"SDL_timer.h"
 	"SDL_version.h"
 	"SDL_video.h"
-	"SDL_locale.h"
-	"SDL_misc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -81,45 +76,43 @@
 	<ctype.h>
 	<math.h>
 	<float.h>
+	<sal.h>
+	"begin_code.h"
 	<alloca.h>
 	<malloc.h>
 	<malloc.h>
 	<malloc.h>
 	<stdlib.h>
-	<sal.h>
-	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_config.h
 	"SDL_platform.h"
-	<winsdkver.h>
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\begin_code.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\begin_code.h
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\close_code.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\close_code.h
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
-	<sys/cpuinline.h>
 	<mbarrier.h>
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -129,59 +122,50 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
-	<intrin.h>
 	<endian.h>
-	<endian.h>
-	<sys/endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
 	"SDL_mutex.h"
+	"begin_code.h"
 	<process.h>
 	<process.h>
 	<stdlib.h>
-	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
-	<arm_neon.h>
 	<altivec.h>
-	<arm_neon.h>
-	<armintr.h>
-	<arm_neon.h>
-	<arm64intr.h>
-	<arm64_neon.h>
 	<mm3dnow.h>
 	<immintrin.h>
 	<mmintrin.h>
@@ -191,7 +175,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -205,7 +189,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -213,13 +197,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"SDL_endian.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -227,7 +211,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -236,11 +220,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -248,31 +232,30 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
-	"SDL_sensor.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
@@ -283,11 +266,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -295,19 +278,19 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
@@ -319,23 +302,23 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
@@ -346,19 +329,19 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -367,7 +350,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -375,13 +358,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1641849092 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+1519922305 e:\code\sdl2\bricksballs\sdl2\x86_64-w64-mingw32\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
@@ -408,19 +391,19 @@
 	"begin_code.h"
 	"close_code.h"
 
-1650023722 e:\code\sdl2\bricksballs\include\play.h
+1652793683 e:\code\sdl2\bricksballs\include\play.h
 	"level.h"
 	"setting.h"
 	<queue>
 
-1647675875 e:\code\sdl2\bricksballs\include\level.h
+1653067183 e:\code\sdl2\bricksballs\include\level.h
 	<parameter.h>
 
 1647712531 e:\code\sdl2\bricksballs\include\setting.h
 	<parameter.h>
 	<sound.h>
 
-1647683418 e:\code\sdl2\bricksballs\include\sound.h
+1653062704 e:\code\sdl2\bricksballs\include\sound.h
 	<iostream>
 	<SDL_mixer.h>
 
@@ -433,10 +416,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1648807456 e:\code\sdl2\bricksballs\include\custom.h
+1652793683 e:\code\sdl2\bricksballs\include\custom.h
 	<parameter.h>
 
-1650023620 source:e:\code\sdl2\bricksballs\src\clientgame.cpp
+1650621418 source:e:\code\sdl2\bricksballs\src\clientgame.cpp
 	"clientGame.h"
 	"textureManager.h"
 
@@ -445,33 +428,34 @@
 	<SDL_image.h>
 	<map>
 
-1650023777 source:e:\code\sdl2\bricksballs\src\custom.cpp
+1652793699 source:e:\code\sdl2\bricksballs\src\custom.cpp
 	"custom.h"
 	"textureManager.h"
 	<fstream>
 
-1648865805 source:e:\code\sdl2\bricksballs\src\event.cpp
+1653066570 source:e:\code\sdl2\bricksballs\src\event.cpp
 	"event.h"
+	"sound.h"
 
 1650023839 source:e:\code\sdl2\bricksballs\src\game.cpp
 	"game.h"
 	"textureManager.h"
 
-1650023757 source:e:\code\sdl2\bricksballs\src\level.cpp
+1650043114 source:e:\code\sdl2\bricksballs\src\level.cpp
 	"level.h"
 	"textureManager.h"
 
-1650023798 source:e:\code\sdl2\bricksballs\src\parameter.cpp
+1652786583 source:e:\code\sdl2\bricksballs\src\parameter.cpp
 	"parameter.h"
 	<math.h>
 
-1650033768 source:e:\code\sdl2\bricksballs\src\play.cpp
+1652793716 source:e:\code\sdl2\bricksballs\src\play.cpp
 	"play.h"
 	"textureManager.h"
 	<fstream>
 	<math.h>
 
-1650023821 source:e:\code\sdl2\bricksballs\src\setting.cpp
+1650043182 source:e:\code\sdl2\bricksballs\src\setting.cpp
 	"setting.h"
 	"textureManager.h"
 

@@ -11,6 +11,8 @@ public:
     areaSetting = {237, 550, 137, 52},
     areaCustom = {75, 450, 300, 70};
 
+  bool flushed = 0;
+
   clientGame() {};
   static clientGame* Instance()
 	{

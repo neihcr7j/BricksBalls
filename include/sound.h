@@ -8,7 +8,7 @@ namespace Sound {
   bool state();
   void on();
   void off();
-  void open(std::string path, int loops = 1);
+  void open(std::string path, int loops = 0);
 }
 
 #endif // SOUND_H

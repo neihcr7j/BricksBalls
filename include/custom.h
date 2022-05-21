@@ -14,7 +14,7 @@ public:
 
   int clicked;
   int indexCell, numbersCell;
-  char a[WIDTH / lengthCell][HEIGHT / lengthCell];
+  char coor[WIDTH / lengthCell][HEIGHT / lengthCell];
 
   Custom()
   {
@@ -24,7 +24,7 @@ public:
 
     for (int i = 0; i < WIDTH / lengthCell; ++i)
       for (int j = 0; j < HEIGHT / lengthCell; ++j)
-        a[i][j] = '0';
+        coor[i][j] = '0';
   };
 
   static Custom* Instance()

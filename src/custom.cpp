@@ -41,7 +41,7 @@ void Custom::saveData()
 
   for (int i = 0; i < HEIGHT / lengthCell; ++i)
     for (int j = 0; j < WIDTH / lengthCell; ++j)
-      out << a[j][i] << (j + 1 == WIDTH / lengthCell ? "\n" : "");
+      out << coor[j][i] << (j + 1 == WIDTH / lengthCell ? "\n" : "");
 }
 
 void Custom::showCell(SDL_Renderer *renderer)
@@ -51,7 +51,7 @@ void Custom::showCell(SDL_Renderer *renderer)
     {
       SDL_Rect r = {i * lengthCell, j * lengthCell, lengthCell, lengthCell};
       Draw::Rect(renderer, r, boderColor, 0);
-      Draw::Cell(renderer, r, convertCharToColor(a[i][j]));
+      Draw::Cell(renderer, r, convertCharToColor(coor[i][j]));
     }
 }
 
@@ -62,7 +62,7 @@ void Custom::changeCell(int xBegin, int yBegin, int xEnd, int yEnd, char ch)
 
   for (int i = xBegin / lengthCell; i <= xEnd / lengthCell; ++i)
     for (int j = yBegin / lengthCell; j <= yEnd / lengthCell; ++j)
-      a[i][j] = ch;
+      coor[i][j] = ch;
 }
 
 void Custom::showLightCell(SDL_Renderer *renderer, int xBegin, int yBegin, int xEnd, int yEnd)

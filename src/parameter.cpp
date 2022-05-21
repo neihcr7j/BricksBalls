@@ -111,7 +111,7 @@ bool Check::clickInRect(SDL_MouseButtonEvent e, const SDL_Rect& r)
 
 bool Check::rightAngle(double alpha)
 {
-  return abs(int(alpha / (PI / 2)) - (alpha / (PI / 2))) < 0.4;
+  return abs((alpha / (PI / 2)) - int(alpha / (PI / 2))) < 0.4;
 }
 
 //==============================================DRAW=======================================================================//

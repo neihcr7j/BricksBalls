@@ -1,17 +1,30 @@
 #include "event.h"
+#include "sound.h"
 
 Event* Event::instance = nullptr;
 
 std::string Event::changeType(std::string s, SDL_Renderer *renderer)
 {
+  if (type != "client" && s == "client")
+  {
+    clientGame::Instance() -> flushed = false;
+  }
+
   if (type != "play" && s == "play")
   {
+    Play::Instance() -> flushed = false;
     SDL_ShowCursor(SDL_DISABLE);
   }
 
   if (type == "play" && s != "play")
   {
     SDL_ShowCursor(SDL_ENABLE);
+    Play::Instance() -> reset(renderer);
+
+    if (s == "victory")
+      Sound::open("data/mixer/winGame.wav");
+    else
+      Sound::open("data/mixer/lostGame.wav");
   }
 
   if (type != "start" && s == "start")
@@ -24,7 +37,10 @@ std::string Event::changeType(std::string s, SDL_Renderer *renderer)
 std::string Event::updating(SDL_Renderer *renderer)
 {
   SDL_Event e;
-  SDL_PollEvent(&e);
+  if (!SDL_PollEvent(&e))
+  {
+    return Event::Instance() -> type;
+  }
 
   if (e.type == SDL_QUIT)
   {

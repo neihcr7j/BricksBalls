@@ -35,8 +35,10 @@ public:
     areaBackClient = {100, 260, 100, 100},
     areaContinue = {240, 260, 100, 100};
 
+  bool flushed = 0;
+
   bool flag;
-  char a[WIDTH / lengthCell][HEIGHT / lengthCell];
+  char coor[WIDTH / lengthCell][HEIGHT / lengthCell];
   int numbersCell;
   const int static limitNumbersBall = 100;
   std::queue <Ball> setBall;

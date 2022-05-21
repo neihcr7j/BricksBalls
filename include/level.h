@@ -12,7 +12,7 @@ public:
 
   int levelMax;
   int numberLevel;
-  Level() : numberLevel(0), levelMax(30) {};
+  Level() : numberLevel(0), levelMax(10) {};
 
   static Level* Instance()
 	{

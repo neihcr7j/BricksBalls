@@ -9,11 +9,11 @@ Play* Play::instance = nullptr;
 
 bool Play::destroyCell(int i, int j)
 {
-  if (a[i][j] == '0') return false;
+  if (coor[i][j] == '0') return false;
 
-  if (a[i][j] != '1')
+  if (coor[i][j] != '1')
   {
-    a[i][j] = '0';
+    coor[i][j] = '0';
     numbersCell --;
 
     if (1 < i && i + 2 < WIDTH / lengthCell)
@@ -85,8 +85,8 @@ void Play::readData(int level)
   for (int i = 0; i < HEIGHT / lengthCell; ++i)
     for (int j = 0; j < WIDTH / lengthCell; ++j)
     {
-      inp >> a[j][i];
-      if (a[j][i] != '0' && a[j][i] != '1') numbersCell ++;
+      inp >> coor[j][i];
+      if (coor[j][i] != '0' && coor[j][i] != '1') numbersCell ++;
     }
 }
 
@@ -96,25 +96,16 @@ bool Play::nextBall(Ball &b)
 
   if (b.dirY > 0 && b.y + radiusBall >= yBar && b.y + radiusBall <= yBar + unit && abs(b.x - Get::xMiddleBar()) < widthBar / 2)
   {
-    b.dirX = b.dirX;
-    b.dirY = -b.dirY;
-
     double x = (b.x - Get::xMiddleBar()) / (widthBar / 2);
     double y = sqrt(1 - x * x);
 
-    double alpha = Get::Angle(b.dirX, -b.dirY) + (Get::Angle(x, y) - PI / 2) / 2;
+    double alpha = Get::Angle(b.dirX, b.dirY) + (Get::Angle(x, y) - PI / 2) / 2;
 
-    if (alpha >= PI) alpha = PI - 0.1;
-    if (alpha < 0) alpha = 0.1;
+    alpha = std::min(alpha, PI - 0.4);
+    alpha = std::max(alpha, 0.4);
 
     b.dirX = cos(alpha);
     b.dirY = -sin(alpha);
-
-    if (b.dirY >= -0.4)
-    {
-      b.dirY = -0.4;
-      b.dirX = -b.dirX / abs(b.dirX) * sqrt(1 - b.dirY * b.dirY);
-    }
 
     return 1;
   }
@@ -159,11 +150,11 @@ void Play::openGift(int type)
       do
       {
         alpha = alpha + double(Get::Rand(360)) / 360 * 2 * PI;
-      } while(Check::rightAngle(alpha) && Check::rightAngle(alpha + 2 * PI / 3) && Check::rightAngle(alpha + 4 * PI / 3));
+      } while(Check::rightAngle(alpha) || Check::rightAngle(alpha + 2 * PI / 5) || Check::rightAngle(alpha - 2 * PI / 5));
 
-      setBall.push(Ball(b.x, b.y, cos(alpha + 0 * PI / 3), sin(alpha + 0 * PI / 3)));
-      setBall.push(Ball(b.x, b.y, cos(alpha + 2 * PI / 3), sin(alpha + 2 * PI / 3)));
-      setBall.push(Ball(b.x, b.y, cos(alpha + 4 * PI / 3), sin(alpha + 4 * PI / 3)));
+      setBall.push(Ball(b.x, b.y, cos(alpha + 0 * PI / 5), sin(alpha + 0 * PI / 5)));
+      setBall.push(Ball(b.x, b.y, cos(alpha + 2 * PI / 5), sin(alpha + 2 * PI / 5)));
+      setBall.push(Ball(b.x, b.y, cos(alpha - 2 * PI / 5), sin(alpha - 2 * PI / 5)));
 
       setBall.pop();
     }
@@ -229,7 +220,7 @@ void Play::showCell(SDL_Renderer *renderer)
     for (int j = 0; j < WIDTH / lengthCell; ++j)
     {
       SDL_Rect r = {i * lengthCell, j * lengthCell, lengthCell, lengthCell};
-      Draw::Cell(renderer, r, convertCharToColor(a[i][j]));
+      Draw::Cell(renderer, r, convertCharToColor(coor[i][j]));
     }
 }
 
@@ -316,20 +307,30 @@ int Play::running(SDL_Window *window, SDL_Renderer *renderer)
 
 void Play::over(SDL_Renderer *renderer)
 {
-  SDL_RenderClear(renderer);
-  textureManager::Instance() -> draw(renderer, areaBackGround, "data/image/Over.jpg");
-  textureManager::Instance() -> draw(renderer, areaBackClient, "data/image/Icon_home.png");
-  textureManager::Instance() -> draw(renderer, areaContinue, "data/image/Icon_replay.png");
+  if (!flushed) {
+    SDL_RenderClear(renderer);
 
-  SDL_RenderPresent(renderer);
+    textureManager::Instance() -> draw(renderer, areaBackGround, "data/image/Over.jpg");
+    textureManager::Instance() -> draw(renderer, areaBackClient, "data/image/Icon_home.png");
+    textureManager::Instance() -> draw(renderer, areaContinue, "data/image/Icon_replay.png");
+
+    SDL_RenderPresent(renderer);
+
+    flushed = true;
+  }
 }
 
 void Play::victory(SDL_Renderer *renderer)
 {
-  SDL_RenderClear(renderer);
-  textureManager::Instance() -> draw(renderer, areaBackGround, "data/image/Victory.jpg");
-  textureManager::Instance() -> draw(renderer, areaBackClient, "data/image/Icon_home.png");
-  textureManager::Instance() -> draw(renderer, areaContinue, "data/image/Icon_next.png");
+  if (!flushed) {
+    SDL_RenderClear(renderer);
 
-  SDL_RenderPresent(renderer);
+    textureManager::Instance() -> draw(renderer, areaBackGround, "data/image/Victory.jpg");
+    textureManager::Instance() -> draw(renderer, areaBackClient, "data/image/Icon_home.png");
+    textureManager::Instance() -> draw(renderer, areaContinue, "data/image/Icon_next.png");
+
+    SDL_RenderPresent(renderer);
+
+    flushed = true;
+  }
 }
