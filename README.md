@@ -19,7 +19,7 @@ Khi các quả bóng phá hủy gạch sẽ có tỉ lệ ra vật phẩm, khi t
  
  - Khi vào **custom** chọn màu gạch hoặc tường, rồi kéo thả chuột trong lưới để tạo các hình chữ nhật theo ý muốn
  - Sau khi tạo xong map bấm vào biểu tượng **save** rồi chuyển chế độ từ **classic** sang **custom** ở phần **Setting**
- - Vào phần **Play** để bắt đầu chơi màn mình vừa tạo
+ - Vào phần **Play** để bắt đầu chơi màn vừa tạo
 
 ## Algorithm
 **1. Brick** 
