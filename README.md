@@ -24,11 +24,11 @@ Khi các quả bóng phá hủy gạch sẽ có tỉ lệ ra vật phẩm, khi t
 ## Algorithm
 **1. Brick** 
 
-Ta sử dụng một mảng 2 chiều để lưu trạng thái các ô (như : gạch, là tường, không có gì, ...) và đọc dữ liệu từ 1 file text
+Sử dụng một mảng 2 chiều để lưu trạng thái các ô (như : gạch, là tường, không có gì, ...) và đọc dữ liệu từ 1 file text
 
 **2. Ball** 
 
-Ta coi game là 1 hệ trục tọa độ với trục Ox là chiều ngang, Oy là chiều dọc và có đơn vị là 1 pixel
+Coi game là 1 hệ trục tọa độ với trục Ox là chiều ngang, Oy là chiều dọc và có đơn vị là 1 pixel
 
 Sử dụng một struct(x, y, dirX, dirY) để lưu mỗi quả bóng trong hệ: 
 - x, y là tọa độ của bóng hiện tại trong hệ trục tọa độ
@@ -42,7 +42,13 @@ Vật cản đặc biệt :
 - Nếu như ta chỉ bật nảy theo phản xạ thông thường thì hệ số góc của vector sẽ chỉ có 4 dạng dirX/dirY, -dirX/dirY, dirY/dirX, -dirY/dirY, như vậy bóng có thể sẽ không đi vào được một số vùng mà mãi lặp lại theo 1 chu kì di chuyển
 - Giải pháp : ta sẽ sử dụng thanh chắn như một hình vòng cung để đổi hệ số góc của vector khi ca chạm với bóng, như vậy vừa có thể làm đa dạng hệ số góc của vector vừa có thể giữ được tính phản xạ 
 
-**3. Custom**
+**3. Items**
+
+Khi bóng phá hủy ô gạch ta sẽ sử dụng hàm random để lấy tỉ lệ sinh ra vật phẩm xanh và vàng
+
+Tỉ lệ sẽ được chọn tỉ lệ thuận với số bóng đang có để giúp cho lượng quà rơi ra một cách ổn định
+
+**4. Custom**
 
 Ta vẫn sử dụng một mảng 2 chiều để lưu trạng thái các ô
 
