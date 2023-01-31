@@ -1,8 +1,4 @@
 # BricksBalls
-## Introduction
-  Xem demo Game tại : https://www.youtube.com/watch?v=BQM8ThgjV6k 
-  
-  (Lưu ý : app quay màn hình hiện thị trỏ chuột không chính xác và không ẩn khi chơi game)
 ## Technologies Used 
 * **IDE :** CodeBlock 20.03
 * **Thư viện :** SDL-2.0.12, SDL-Image-2.0, SDL-Mixer-2.0, SDL-TTF-2.0
